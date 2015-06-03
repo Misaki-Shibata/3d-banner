@@ -27,39 +27,39 @@ function init() {
 
 
     var el, info, img, face, boxInfo;
-    var cubeSize  = 320;
+    var cubeSizeH  = 50;
+    var cubeSizeW  = 320;
     boxInfo = [
        {
-           //テクスチャとして使いたい画像のURL
-           url: 'http://jsrun.it/assets/g/N/z/s/gNzsx.png',
+           url: 'bannerLR.png',
            //この面の位置
-           position: [ -cubeSize, 0, 0 ],
+           position: [ -cubeSizeW, 0, 0 ],
            //この面の回転
            rotation: [ 0, Math.PI / 2, 0 ]
        },
        {
-           url: 'http://jsrun.it/assets/b/X/8/T/bX8TN.png',
-           position: [ cubeSize, 0, 0 ],
+           url: 'bannerLR.png',
+           position: [ cubeSizeW, 0, 0 ],
            rotation: [ 0, -Math.PI / 2, 0 ]
        },
        {
-           url: 'http://jsrun.it/assets/u/G/6/B/uG6BH.png',
-           position: [ 0,  cubeSize, 0 ],
+           url: 'banner3.png',
+           position: [ 0,  cubeSizeH, 0 ],
            rotation: [ Math.PI / 2, 0, Math.PI ]
        },
        {
-           url: 'http://jsrun.it/assets/e/s/z/w/eszwi.png',
-           position: [ 0, -cubeSize, 0 ],
+           url: 'banner4.png',
+           position: [ 0, -cubeSizeH, 0 ],
            rotation: [ - Math.PI / 2, 0, Math.PI ]
        },
        {
-           url: 'http://jsrun.it/assets/9/t/3/9/9t39J.png',
-           position: [ 0, 0,  cubeSize ],
+           url: 'banner1.png',
+           position: [ 0, 0,  cubeSizeH ],
            rotation: [ 0, Math.PI, 0 ]
        },
        {
-           url: 'http://jsrun.it/assets/h/e/o/9/heo9V.png',
-           position: [ 0, 0, -cubeSize ],
+           url: 'banner2.png',
+           position: [ 0, 0, -cubeSizeH ],
            rotation: [ 0, 0, 0 ]
        }
     ];
@@ -67,8 +67,8 @@ function init() {
     //div要素を生成
     el = document.createElement('div');
     //指定されたキューブのサイズに幅と高さを設定
-    el.style.width  = cubeSize * 2 + 'px';
-    el.style.height = cubeSize * 2 + 'px';
+    el.style.width  = cubeSizeW * 2 + 'px';
+    el.style.height = cubeSizeH * 2 + 'px';
 
     //生成したdiv要素をThree.jsのオブジェクトと関連付ける
     //diceはサイコロの本体用の空のオブジェクト
@@ -81,7 +81,7 @@ function init() {
           img = document.createElement('img');
 
           //キューブのサイズに画像サイズを変更
-          img.width = cubeSize * 2;
+          img.width = cubeSizeW * 2;
 
           //指定されたテクスチャ用画像を読み込む
           img.src = info.url;
@@ -139,12 +139,10 @@ function init() {
     $("#a").click(function () {
         transform(targetA, 1000);
     });
-
     // // #aがクリックされたら 設定B 方向にアニメーション
     $("#b").click(function () {
         transform(targetB, 1000);
     });
-
     // // #aがクリックされたら 設定C 方向にアニメーション
     $("#c").click(function () {
         transform(targetC, 1000);
