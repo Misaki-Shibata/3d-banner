@@ -50,12 +50,12 @@ function init() {
        {
            url: 'banner4.png',
            position: [ 0, -cubeSizeH, 0 ],
-           rotation: [ - Math.PI / 2, 0, Math.PI ]
+           rotation: [ Math.PI / 2, 0, Math.PI ]
        },
        {
            url: 'banner1.png',
            position: [ 0, 0,  cubeSizeH ],
-           rotation: [ 0, Math.PI, 0 ]
+           rotation: [ 0, Math.PI * 2, 0 ]
        },
        {
            url: 'banner2.png',
@@ -79,14 +79,14 @@ function init() {
 
           //テクスチャとして使うimg要素を生成
           img = document.createElement('img');
-
-          //キューブのサイズに画像サイズを変更
+          //
+          // //キューブのサイズに画像サイズを変更
           img.width = cubeSizeW * 2;
-
-          //指定されたテクスチャ用画像を読み込む
+          //
+          // //指定されたテクスチャ用画像を読み込む
           img.src = info.url;
-
-          //生成したimg要素をThree.jsのオブジェクトと関連付け
+          //
+          // //生成したimg要素をThree.jsのオブジェクトと関連付け
           face = new THREE.CSS3DObject(img);
 
           //生成したオブジェクトを指定の位置に移動・回転
@@ -96,7 +96,31 @@ function init() {
           //dice本体に面を追加
           dice.add(face);
       }
+    // scene.add(dice);
+
+
     scene.add(dice);
+    //正面マテリアルの生成
+    //  var materialFront = new THREE.MeshBasicMaterial( { color: 0xff0000 } );
+    //
+    // //側面マテリアルの生成
+    //  var materialSide = new THREE.MeshBasicMaterial( { color: 0x000088 } );
+    //  var materialArray = [ materialFront, materialSide ];
+    //
+    // //テキスト
+    // var textGeom = new THREE.TextGeometry( "Three.js!",{
+    //         size: 30, height: 4, curveSegments: 3,
+    //         font: "helvetiker", weight: "normal", style: "normal",
+    //         bevelThickness: 1, bevelSize: 2, bevelEnabled: true,
+    //         material: 0, extrudeMaterial: 1
+    // });
+    //
+    // var textMaterial = new THREE.MeshFaceMaterial(materialArray);
+    // var textMesh = new THREE.Mesh(textGeom, textMaterial );
+    //
+    // //シーンオブジェクトに追加
+    // scene.add(textMesh);
+
 
     // CSS3Dレンダラー
     renderer = new THREE.CSS3DRenderer();
