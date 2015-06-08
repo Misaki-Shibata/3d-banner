@@ -1,0 +1,440 @@
+<style type="text/css">
+<!--
+@charset "euc-jp";
+/* CSS Document */
+
+/* ############################################################
+
+	CSS Member parts
+	Last Up Date: 2010.05.13
+	Author: LaisUco.tsugiyama
+
+############################################################ */
+
+
+/* 16pxパージョン */
+ul.list16px {
+	margin-bottom: 5px;
+	border: solid 1px #BEBEBE;
+	font-size: 16px;
+}
+ul.list16px li {
+	border-bottom: solid 1px #BEBEBE;
+}
+ul.list16px li:last-child {
+	border: none;
+}
+ul.list16px li a {
+	display: block;
+    padding: 9px 25px 9px 9px;
+	color: #000000;
+	background: url(/images/snikki/chevron.png) no-repeat right center;
+	text-decoration: none;
+}
+
+
+
+/* 14pxパージョン */
+ul.list14px {
+	margin-bottom: 5px;
+	border: solid 1px #BEBEBE;
+	font-size: 14px;
+}
+ul.list14px li {
+	border-bottom: solid 1px #BEBEBE;
+}
+ul.list14px li:last-child {
+	border: none;
+}
+ul.list14px li a {
+	display: block;
+    padding: 9px 25px 9px 9px;
+	color: #000000;
+	text-decoration: none;
+}
+
+
+/* フォントサイズ */
+.f90px{font-size:90%;}
+.f85px{font-size:85%;}
+.f80px{font-size:80%;}
+/* 右寄せ */
+.right{float:right;}
+/* 色 */
+.red{color:#FF0000;}
+/* マージン */
+.mb10px{margin-bottom:10px;}
+.mb15px{margin-bottom:15px;}
+.mb20px{margin-bottom:20px;}
+/* パディング */
+.p10px{padding:10px;}
+.pt10px{padding-top:10px;}
+.pt15px{padding-top:15px;}
+.pt20px{padding-top:20px;}
+
+.f90pxM{
+	font-size:90%;
+	margin:10px;
+}
+
+/* 共通 */
+h2.listtitle, h1.listtitle {
+	background:#0077dd; margin:0; padding:5px; color:#ffffff; font-size:120%;
+}
+p.noteTxt {
+	padding: 0 3px;
+	margin-bottom:5px;
+	font-size:12px;
+	color:#999999;
+}
+
+/*検索部分*/
+
+#search{
+	clear:both;
+	background:#0077dd;
+	margin-bottom:10px;
+	padding:5px 0 5px 0;
+}
+
+#searchBox{
+	background:#0077dd;
+	padding:5px;
+	text-align:center;
+}
+
+#searchBox .text{
+	width:95%;
+	height:28px;
+	margin:auto auto 7px auto;
+	font-size: 100%;
+}
+
+#searchBox .btn{
+	width:98%;
+	font-size: 140%;
+}
+
+/*検索部分サーチ結果画面用*/
+
+#search2{
+	clear:both;
+	background:#0077dd;
+	margin-bottom:5px;
+	padding:5px 0 5px 0;
+}
+
+#searchBox2{
+	background:#0077dd;
+	padding:5px;
+	text-align:center;
+}
+
+#searchBox2 .text{
+	width:55%;
+	height:28px;
+	margin:auto;
+	font-size: 100%;
+}
+
+#searchBox2 .btn{
+	width:35%;
+	font-size: 140%;
+}
+
+
+
+/*パンクズ*/
+#pan{
+	clear:both;
+	font-size:80%;
+}
+
+/*カキコミ*/
+#bbsWrite{
+	clear:both;
+	float:left;
+}
+
+#bbsWrite a{
+	text-decoration:none;
+	background: url(/images/snikki/icon_bbs_write.png) no-repeat left;
+	padding:12px 0px 0px 30px;
+	min-height:29px;
+	margin:5px;
+}
+
+/*お気に入り追加*/
+#addMypage{
+	float:left;
+	margin-left:20px;
+}
+
+#addMypage a{
+	text-decoration:none;
+	background: url(/images/snikki/icon_bbs_add.png) no-repeat left;
+	padding:12px 0px 0px 30px;
+	min-height:29px;
+	margin:5px;
+}
+
+/*お気に入り追加BBS1ページ目用 ※20110608追加版*/
+#addMypage1{
+	clear:both;
+	float:left;
+	width:100%;
+	border-bottom:1px solid #ccc;
+}
+
+#addMypage1 a{
+	text-decoration:none;
+	background: url(/images/snikki/icon_bbs_add.png) no-repeat left;
+	padding:12px 0px 0px 30px;
+	min-height:29px;
+	margin:5px;
+}
+
+/*ページャー*/
+.bbsPager{
+	clear:both;
+	font-size:95%;
+	text-align:right;
+	padding:5px;
+	border-top:1px solid #ccc;
+}
+
+/*掲示板内リスト*/
+#bbsRead{
+	clear:both;
+}
+#bbsRead dl{
+	clear:both;
+	margin:0;
+	padding:5px 0 5px 0;
+	border-top:1px solid #ccc;
+}
+#bbsRead dt{
+	clear:both;
+	margin:0;
+	padding:0;
+	font-size:80%;
+}
+#bbsRead dt span{
+	color:#666666;
+	margin-left:10px;
+}
+#bbsRead dd{
+	clear:both;
+	margin:0;
+	padding:0;
+}
+#bbsRead dd a{
+	float:right;
+	font-size:80%;
+}
+
+/*掲示板書込み無し*/
+#bbsNone{
+	clear:both;
+	font-size:90%;
+	border-top:1px solid #ccc;
+}
+
+/*掲示板統合誘導*/
+#bbsIntegration{
+	padding:5px;
+}
+
+/*カキコミ*/
+#write{
+	clear:both;
+	margin-bottom:10px;
+	padding:5px 0 5px 0;
+}
+
+#writeBox{
+	padding:5px;
+	text-align:left;
+}
+
+#writeBox .text{
+	width:95%;
+	height:28px;
+	margin:auto auto 7px auto;
+	font-size: 100%;
+}
+
+#writeBox .text2{
+	width:95%;
+	margin:auto auto 7px auto;
+	font-size: 100%;
+}
+
+#writeBox .btn{
+	width:98%;
+	font-size: 140%;
+}
+
+#writeRes{
+	padding:10px;
+	border-bottom:1px solid #ccc;
+}
+
+/*ログイン・新規会員登録*/
+
+#regist{
+	width:100%;
+}
+
+#regist .rakuten {
+	float: left;
+	padding-top: 2px;
+	margin:10px 10px 10px 20px;
+}
+#regist .rakuten a {
+	display: block;
+	padding: 7px;
+	border: 1px solid #0077dd;	/* サービスカラーを入れてください */
+	-webkit-border-radius: 5px;
+	color: #FFFFFF;
+	background: -webkit-gradient(linear, 0% 49%, 0% 50%, from(#0077dd), to(#3399ff));	/* fromにサービスカラーtoにサービスカラーより薄い色をを入れてください */
+	text-align: center;
+	text-shadow:1px 1px 1px #0077dd;	/* サービスカラーを入れてください */
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+#regist .norakuten {
+	float: right;
+	padding-top: 2px;
+	margin:10px 20px 10px 10px;
+}
+#regist .norakuten a {
+	display: block;
+	padding: 7px;
+	border: 1px solid #0077dd;	/* サービスカラーを入れてください */
+	-webkit-border-radius: 5px;
+	color: #FFFFFF;
+	background: -webkit-gradient(linear, 0% 49%, 0% 50%, from(#0077dd), to(#3399ff));	/* fromにサービスカラーtoにサービスカラーより薄い色をを入れてください */
+	text-align: center;
+	text-shadow:1px 1px 1px #0077dd;	/* サービスカラーを入れてください */
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+
+
+/*マイページ ※20110608修正　*/
+#mypage{
+	margin:10px 0 10px 0;
+}
+#mypage li{
+	margin:3px;
+	border-bottom:1px solid #ccc;
+	padding-bottom:5px;
+}
+#mypage li a{
+	padding:5px;
+}
+#mypage li span{
+	font-size:80%; color:#c00; border:none; padding:0 5px;
+}
+#mypage .mypageDel{
+	font-size:75%;
+	text-decoration:none;
+	background: url(/images/snikki/icon_delete.png) no-repeat left;
+	padding:0 0 0 20px;
+	min-height:16px;
+}
+
+
+.textBlock {
+    padding: 7px;
+    color: #484848;
+    display:block;
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+.textBlock a{
+    word-wrap:break-word;
+    word-break:break-all;
+    display:block;
+}
+
+div#member div#welcome ul.userGuide {
+	float: right;
+}
+
+div#member div#welcome #btnBlock {
+	float: left;
+}
+
+div#member div#welcome #btnBlock a {
+	padding: 5px;
+	text-decoration: none;
+}
+
+
+
+div#member div#welcome #btnBlock a.btn {
+position: relative;
+margin: 0 auto !important;
+background-color: #2194F7;
+background-image: -moz-linear-gradient(top, #07D, #006BD2);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#07D), to(#006BD2));
+background-image: -webkit-linear-gradient(top, #07D, #006BD2);
+background-image: -o-linear-gradient(top, #07D, #006BD2);
+background-image: linear-gradient(to bottom, #07D, #006BD2);
+background-repeat: repeat-x;
+border-image: none;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+border-color: #E6E6E6 #E6E6E6 #BFBFBF;
+border-color: #e5e5e5 #e5e5e5 #bfbfbf;
+border-bottom-color: #B3B3B3;
+border: 1px #0071D7 solid;
+cursor: pointer;
+display: inline-block;
+color: #fff;
+font-size: 85%;
+font-weight: normal;
+color: white;
+line-height: 20px;
+margin-bottom: 0;
+padding: 4px 26px 4px 6px;
+text-align: left;
+vertical-align: middle;
+-webkit-transition: all .1s linear;
+-moz-transition: all .1s linear;
+-o-transition: all .1s linear;
+transition: all .1s linear;
+vertical-align: middle;
+white-space: nowrap;
+}
+
+div#member div#welcome #btnBlock a.btn i {
+position: absolute;
+right: 7px;
+top: 5px;
+}
+
+i.icon-chevron-right {
+background-position: -456px -72px;
+}
+-->
+</style>
+
+<h2 class="listtitle">掲示板をジャンルから探す</h2>
+<ul class="list16px">
+<li><a href="http://www.nikki.ne.jp/bbs/10/">各種メーカー</a></li>
+<li><a href="http://www.nikki.ne.jp/bbs/20/">金融/商社/保険</a></li>
+<li><a href="http://www.nikki.ne.jp/bbs/30/">情報通信コンサル</a></li>
+<li><a href="http://www.nikki.ne.jp/bbs/40/">マスコミ</a></li>
+<li><a href="http://www.nikki.ne.jp/bbs/50/">人材/サービス</a></li>
+<li><a href="http://www.nikki.ne.jp/bbs/60/">ノンジャンル</a></li>
+<li><a href="http://www.nikki.ne.jp/bbs/70/">雑談/息抜き</a></li>
+<li><a href="http://www.nikki.ne.jp/bbs/80/">就職活動書籍</a></li>
+</ul>
