@@ -23,6 +23,9 @@
 		<li>
 			<a target="_blank" href="banner-H.html">Hタイプ</a>
 		</li>
+		<li>
+			<a target="_blank" href="banner-2.html">2タイプ</a>
+		</li>
 	</ul>
 
 
