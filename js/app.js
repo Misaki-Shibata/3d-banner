@@ -7,15 +7,32 @@ var iii=1.0;
 init();// 初期化
 animate();// アニメーション開始
 
-for(i=1; i< 10; i++){
-  setTimeout(function(){$("#a").trigger("click");}, 1000*i);
-  setTimeout(function(){$("#b").trigger("click");}, 2000*i);
-  setTimeout(function(){$("#c").trigger("click");}, 3000*i);
-  setTimeout(function(){$("#d").trigger("click");}, 4000*i);
-  setTimeout(function(){$("#e").trigger("click");}, 5000*i);
+var interval = 1000;
+for(i=1; i< 50; i++){
+  switch(i % 5){
+    case 1:
+      console.log(interval * i);
+      setTimeout(function(){$("#a").trigger("click");}, interval * i);
+      break;
+    case 2:
+      console.log(interval * i);
+      setTimeout(function(){$("#b").trigger("click");}, interval * i);
+      break;
+    case 3:
+      console.log(interval * i);
+      setTimeout(function(){$("#c").trigger("click");}, interval * i);
+      break;
+    case 4:
+      console.log(interval * i);
+      setTimeout(function(){$("#d").trigger("click");}, interval * i);
+      break;
+    case 0:
+      console.log(interval * i);
+      setTimeout(function(){$("#e").trigger("click");}, interval * i);
+      break;
+
+  }
 }
-
-
 function init() {
 
     // シーンを作る
@@ -24,15 +41,6 @@ function init() {
     // カメラ設定
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 5000);
     camera.position.z = 1000;
-    // camera.position.z = 210;
-    // // オブジェクト（うぇぶ屋ロゴ）
-    // object = new THREE.CSS3DObject(document.getElementById('webya'));
-    // object2 = new THREE.CSS3DObject(document.getElementById('webya2'));
-    //
-    // // オブジェクトをシーンに追加
-    // scene.add(object);
-    // scene.add(object2);
-
 
     var el, info, img, face, boxInfo;
     var cubeSizeH  = 50;
