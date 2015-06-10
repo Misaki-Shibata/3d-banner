@@ -7,6 +7,14 @@ var iii=1.0;
 init();// 初期化
 animate();// アニメーション開始
 
+for(i=1; i< 10; i++){
+  setTimeout(function(){$("#a").trigger("click");}, 1000*i);
+  setTimeout(function(){$("#b").trigger("click");}, 2000*i);
+  setTimeout(function(){$("#c").trigger("click");}, 3000*i);
+  setTimeout(function(){$("#d").trigger("click");}, 4000*i);
+  setTimeout(function(){$("#e").trigger("click");}, 5000*i);
+}
+
 
 function init() {
 
@@ -42,25 +50,25 @@ function init() {
            position: [ cubeSizeW, 0, 0 ],
            rotation: [ 0, -Math.PI / 2, 0 ]
        },
-       {
+       {// fixed
            url: 'banner3.png',
            position: [ 0,  cubeSizeH, 0 ],
-           rotation: [ Math.PI / 2, 0, Math.PI ]
+           rotation: [ (Math.PI / 2), Math.PI , Math.PI ]
        },
-       {
+       {// fixed
            url: 'banner4.png',
            position: [ 0, -cubeSizeH, 0 ],
-           rotation: [ Math.PI / 2, 0, Math.PI ]
+           rotation: [ -(Math.PI / 2), Math.PI , Math.PI ]
        },
-       {
+       {// fixed
            url: 'banner1.png',
            position: [ 0, 0,  cubeSizeH ],
            rotation: [ 0, Math.PI * 2, 0 ]
        },
-       {
+       {// fixed
            url: 'banner2.png',
            position: [ 0, 0, -cubeSizeH ],
-           rotation: [ 0, 0, 0 ]
+           rotation: [ -(Math.PI), Math.PI * 2, Math.PI * 2 ]
        }
     ];
 
@@ -91,6 +99,8 @@ function init() {
 
           //生成したオブジェクトを指定の位置に移動・回転
           face.position.fromArray(info.position);
+          // console.log(info.url)
+          // console.log(info.rotation)
           face.rotation.fromArray(info.rotation);
 
           //dice本体に面を追加

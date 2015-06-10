@@ -3,9 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-<!-- <script type="text/javascript" src="http://github.com/rafaelp/css_browser_selector/raw/master/css_browser_selector.js"></script> -->
-<!-- css -->
-<title>CSS3d iframe</title>
+<title>no title</title>
 </head>
 <style type="text/css">
 <!--
@@ -66,53 +64,38 @@ body{
   right: 70px;
 }
 .adnw_block {
-  /* 11s */
- -moz-animation-duration: 11s;
--webkit-animation-duration: 11s;
-animation-duration: 11s;
+  -moz-animation-duration: 11s;
+  -webkit-animation-duration: 11s;
+  animation-duration: 11s;
 
- -moz-animation-name: adnw_slide;
--webkit-animation-name: adnw_slide;
-animation-name: adnw_slide;
+  -moz-animation-name: adnw_slide;
+  -webkit-animation-name: adnw_slide;
+  animation-name: adnw_slide;
 
--moz-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 
--moz-animation-direction: normal;
--webkit-animation-direction: normal;
-animation-direction: normal;
+  -moz-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
 }
 @keyframes adnw_slide {
   0%  {transform: translateY(0);     }
-  40% {transform: translateY(0px); /*  animation-duration の 10％でtranslateさせる為 */}
+  40% {transform: translateY(0px);   }
   50% {transform: translateY(-50px); }
-  90% {transform: translateY(-50px); /*  animation-duration の 10％でtranslateさせる為 */}
+  90% {transform: translateY(-50px); }
   100%{transform: translateY(-100px);}
 }
 @-webkit-keyframes adnw_slide {
   0%  {-webkit-transform: translateY(0);     }
-  40% {-webkit-transform: translateY(0px);}
+  40% {-webkit-transform: translateY(0px);   }
   50% {-webkit-transform: translateY(-50px); }
-  90% {-webkit-transform: translateY(-50px);}
+  90% {-webkit-transform: translateY(-50px); }
   100%{-webkit-transform: translateY(-100px);}
 }
-
-/* for iOS */
-/* .iphone .adnw_month,
-.iphone .adnw_day{
-  top: -2px;
-  font-size: 11px;
-}
-for Android
-.android .adnw_month,
-.android .adnw_day{
-  top: -1px;
-  font-size: 11px;
-} */
 -->
 </style>
-<!--#include file="dummyA.html" -->
 <div class="adnw_slider">
   <ul class="adnw_block"><!--
   --><li><a href="http://www.nikki.ne.jp/" target="_blank"><img class="adnw_logo" src="adnw_logo.png" width="48"><img class="adnw_banner" src="adnw_538x76.png" width="269"><span class="adnw_month">12</span><span class="adnw_day">25</span></a></li><!--
@@ -120,6 +103,5 @@ for Android
   --><li><a href="http://www.nikki.ne.jp/" target="_blank"><img class="adnw_logo" src="adnw_logo.png" width="48"><img class="adnw_banner" src="adnw_538x76.png" width="269"><span class="adnw_month">12</span><span class="adnw_day">25</span></a></li><!--
   --></ul>
 </div>
-<!--#include file="dummyA.html" -->
 </body>
 </html>
