@@ -29,7 +29,7 @@ body{
   padding:0
 }
 .adnw_block li{
-  background-image: url(adnw_bg-B.png);
+  background: #bf0000;
   background-position: 0px 0px;
   width: 320px;  height: 50px;
   background-size: 320px 50px;
@@ -53,62 +53,24 @@ body{
   padding: 1px 0 1px 1px;
 }
 .adnw_banner{
-  /* padding: 0 1px 1px 1px */
   padding: 1px 1px 0 1px
 }
-.adnw_month, .adnw_day{
-  font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+.adnw_text{
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   position: absolute;
-  /* top: -1.5px; */
-  bottom: -1.5px;
+  bottom: -2px;
+  right: -30px;
+  width: 332px;
   color: #fff;
-  font-size: 11px;
+  font-size: 10px;
   -webkit-transform: scale(0.8);
-}
-.adnw_month{
-  right: 90px;
-}
-.adnw_day{
-  right: 70px;
-}
-.adnw_block {
-  -moz-animation-duration: 11s;
-  -webkit-animation-duration: 11s;
-  animation-duration: 11s;
-
-  -moz-animation-name: adnw_slide;
-  -webkit-animation-name: adnw_slide;
-  animation-name: adnw_slide;
-
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-
-  -moz-animation-direction: normal;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-}
-@keyframes adnw_slide {
-  0%  {transform: translateY(0);     }
-  40% {transform: translateY(0px);   }
-  50% {transform: translateY(-50px); }
-  90% {transform: translateY(-50px); }
-  100%{transform: translateY(-100px);}
-}
-@-webkit-keyframes adnw_slide {
-  0%  {-webkit-transform: translateY(0);     }
-  40% {-webkit-transform: translateY(0px);   }
-  50% {-webkit-transform: translateY(-50px); }
-  90% {-webkit-transform: translateY(-50px); }
-  100%{-webkit-transform: translateY(-100px);}
+  text-align: right;
 }
 -->
 </style>
 <div class="adnw_slider">
   <ul class="adnw_block"><!--
-  --><li><a href="http://www.nikki.ne.jp/" target="_blank"><img class="adnw_logo" src="adnw_logo.png" width="48"><img class="adnw_banner" src="adnw_538x76.png" width="269"><span class="adnw_month">12</span><span class="adnw_day">25</span></a></li><!--
-  --><li><a href="http://recipe.rakuten.co.jp/" target="_blank"><img class="adnw_logo" src="adnw_logo.png" width="48"><img class="adnw_banner" src="adnw_538x76.png" width="269"><span class="adnw_month">12</span><span class="adnw_day">25</span></a></li><!--
-  --><li><a href="http://www.nikki.ne.jp/" target="_blank"><img class="adnw_logo" src="adnw_logo.png" width="48"><img class="adnw_banner" src="adnw_538x76.png" width="269"><span class="adnw_month">12</span><span class="adnw_day">25</span></a></li><!--
+  --><li><a href="http://www.nikki.ne.jp/" target="_blank"><img class="adnw_logo" src="adnw_logo.png" width="48"><img class="adnw_banner" src="adnw_538x76.png" width="269"><span class="adnw_text">1クリック1ポイント お一人様1回、期間限定 12月25日から1週間後</span></a></li><!--
   --></ul>
 </div>
 </body>
